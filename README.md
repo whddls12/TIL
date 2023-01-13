@@ -91,3 +91,29 @@ __four__
 `git clone` : 깃허브에서 pc로 파일 복사
 
     zip으로 다운로드받으면 .git 없음 (최신파일만 복사)
+git 명령어에 --help 옵션 추가하면 설명서 볼 수 있음
+
+### git add 한 내용을 취소하는 방법
+1. 한번도 커밋하지 않았을 때
+    </br> git rm --cached <file>
+2. 첫 커밋 이후
+    </br> git restore --staged <file>
+
+
+    ### [git rm --cached, git restore --staged, git reset의 차이점](https://stackoverflow.com/questions/65434544/whats-the-difference-between-git-rm-cached-git-restore-staged-and-gi)
+
+### commit message 수정
+- git commit -amend
+- commit message 수정 후 esc 클릭, :wq 입력
+
+### .gitignore
+* repository나 staging area에 추가되지 말아야 하는 폴더나 파일을 정의하는 파일
+
+## Vim 간단사용법
+    a,o,i : 입력모드
+    esc 누르면 명령모드
+    :w 저장
+    :q 닫기
+    :wq 저장하고 닫기
+    :q! 저장하지 않고 닫기
+
